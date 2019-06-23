@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Landing animation</title>
+		<style>
+			body{
+				background:url(imga.jpg);
+				background-size:cover;
+				background-position:center;
+			}
+			h1{
+				color:red;
+				text-align:center;
+				position: relative;
+				top:300px;
+				font-size: 40px;
+				animation: ani 2s;
+			}
+			button{
+				background-color:red;
+                color:white;
+                border:none;
+                padding:12px 28px;
+                border-radius: 10px;
+                cursor:pointer;
+                opacity:0;
+                position:relative;
+                top:310px;
+                left:600px;
+                animation: ani1 .6s;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+
+			}
+			@keyframes ani{
+				0%{
+					top:-100px;
+				}
+				100%{
+					top:300px;
+				}
+			}
+			@keyframes ani1{
+				0%{
+					opacity: 0;
+				}
+				100%{
+					opacity: 1;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>Welcome to the Hackers World.</h1>
+		<button>Know More</button>
+	</body>
+</html>
